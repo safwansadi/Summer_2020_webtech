@@ -30,8 +30,24 @@
         <br> 
         Email: <input type="email" name="semail" value="" placeholder="">
         <br>
+		<hr>
+        Gender: 
+            <input type="radio" name="gender"
+            <?php if (isset($sgender) && $gender=="male") echo "checked";?>
+            value="male">Male
 
-        <input type="submit" name="" value="Submit">
+            <input type="radio" name="sgender"
+            <?php if (isset($sgender) && $gender=="female") echo "checked";?>
+            value="female">Female
+
+            <input type="radio" name="gender"
+            <?php if (isset($sgender) && $gender=="other") echo "checked";?>
+            value="other">Other
+        <br>
+		</hr>
+		<label for="birthday">Birthday:</label>
+ 		 <input type="date" id="birthday" name="birthday">
+         <input type="submit" name="" value="Submit">
     </form>
 </body>
 </html>
