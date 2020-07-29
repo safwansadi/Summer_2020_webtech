@@ -46,19 +46,7 @@
 
         </div>
     </div>
-
-    <div class="row">
-        <div align="center">
-            <button type="submit" name="submit" class="btn signup">Sign
+     <button type="submit" name="submit" class="btn signup">Sign
                 Up</button>
-        </div>
-    </div>
-
-<div class="row">
-    <div>
-        <a href="login.php"><button type="button" name="submit"
-                class="btn login">Login</button></a>
-    </div>
-</div>
 
 </form>
