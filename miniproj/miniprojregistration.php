@@ -44,6 +44,15 @@
                 </tr>
                 
                 <tr>
+                   <td>
+                   <select id="uprofile" name="uprofile">
+                        <option value="admin">Admin</option>
+                        <option value="user">User</option>
+                    </select>
+                   </td> 
+                </tr>
+                
+                <tr>
                     <td><input type="submit" name="uregister" value="Register" ></td>
                     <td><a href="./login">Login</a></td>
                 </tr>
