@@ -1,0 +1,31 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+</head>
+<body>
+    <label>password :
+        <input name="password" id="password" type="password"/>
+    </label>
+    <label>confirm password: 
+       <input type="password" name="confirm_password" id="confirm_password" onkeyup="ajax()"/> 
+    <span id='message'></span>
+       <script>
+           function ajax() {
+               var pass = document.getElementById('password');
+               var confpass = document.getElementById('confirm_password');
+               var message = document.getElementById('message');
+               console.log('Password Value: ' + pass.value);
+               console.log('Confirm Password Value: '+ confpass.value);
+               message.innerHTML = '';
+                if(pass.value != confpass.value) {
+                    message.innerHTML = 'Password is not matched.';
+                    console.log('call');
+                }
+           }
+       </script>
+</body>
+</html>
